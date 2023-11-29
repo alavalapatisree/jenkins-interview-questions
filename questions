@@ -101,3 +101,72 @@ A downstream project is a project that is triggered by the successful completion
     Use a Jenkins job to execute deployment scripts.
     Integrate Jenkins with deployment tools such as Ansible, Chef, or Puppet.
     Use Jenkins to integrate with container orchestration tools like Kubernetes or Docker Swarm.
+
+15) How do you secure a Jenkins installation? What security features does Jenkins provide ?
+    Access Control : Authentication, Authorization
+    Project base security
+    Credentials Management
+
+16) What is jenkins pipeline as code (Jenkinsfile)? How does it benefit the CI/CD process?
+    Jenkins Pipeline as Code, often represented by a file named Jenkinsfile, is a powerful feature that allows you to define and manage your Jenkins CI/CD (Continuous Integration/Continuous Delivery) processes as code. 
+
+17) Can you describe how to parallize builds in jenkins pipeline?
+    pipeline {
+    agent any
+    
+    stages {
+        stage('Parallel Tests') {
+            // Define parallel branches for tests
+            parallel {
+                stage('Run Unit Tests') {
+                    steps {
+                        echo 'Running unit tests...'
+                        // Add steps to run unit tests
+                    }
+                }
+                stage('Run Integration Tests') {
+                    steps {
+                        echo 'Running integration tests...'
+                        // Add steps to run integration tests
+                    }
+                }
+                stage('Run E2E Tests') {
+                    steps {
+                        echo 'Running end-to-end tests...'
+                        // Add steps to run end-to-end tests
+                    }
+                }
+            }
+        }
+        
+        stage('Post-Test Steps') {
+            steps {
+                echo 'Performing post-test steps...'
+                // Add additional steps after parallel tests
+            }
+        }
+    }
+}
+
+
+18) What is jenkins blueocean, and how does it enchance the jenkins user interface?
+    Jenkins Blue Ocean is indeed a plugin for Jenkins
+    Jenkins Blue Ocean is a modern user interface (UI) and user experience (UX) extension for Jenkins, designed to improve and simplify the way users interact with Jenkins pipelines and builds. 
+    Blue Ocean provides a more visual, intuitive, and efficient interface for managing continuous integration and continuous delivery (CI/CD) pipelines. 
+
+19) How do you trobleshoot a failed build in jenkins? What tools or techniques do you use?
+  Troubleshooting a failed build in Jenkins involves identifying the root cause of the failure and addressing the issue.
+
+  Build Console Output
+  Pipeline Visualization (Blue Ocean)
+  Build History and Trends
+  View Changes
+  Build Environment
+  Dependency Management
+
+20) Have you worked with any pulgins or integrations? Can you share your experienece
+
+
+21) explain the concept of "quiet period" in jenkins and when it might be useful?
+  the "quiet period" refers to a configurable delay or waiting period that occurs after a change is detected in the version control system (VCS) before a build is triggered. 
+  During this quiet period, Jenkins waits to see if there are any additional changes. If additional changes are detected within the specified quiet period, the build is triggered only once, incorporating all the changes that occurred during that time frame.
