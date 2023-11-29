@@ -20,14 +20,17 @@
   install jenkins
 
 4) what are jenkins pulgins, and how do you use/install them ?
-  Jenkins plugins are extensions that add functionality to the Jenkins automation server. Jenkins plugins can provide features such as source code management, build tools integration, deployment support, notification services, and more.
+  Jenkins plugins are extensions that add functionality to the Jenkins automation server. 
+  Jenkins plugins can provide features such as source code management, build tools integration, deployment support, notification services, and more.
   Manage Jenkins > plugins > Available > Search > select >install with or without restart
 
 5) How do you create a new job in jenkins? Walk me through the basic steps ?
 
 
 6) Explain the purpose of Jenkinsfile. How is it used in Jenkins Pipeline ?
-  A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline. The Jenkinsfile is written using the Groovy scripting language and can be stored along with the source code of your application in version control.
+  A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline. The Jenkinsfile is written using the Groovy scripting language and can be stored along with the 
+  source code of your application in version control.
+  
   It provides a clear and visual representation of your entire pipeline.
 
 7) what is jenkins pipeline? can you provide an example of a simple jenkins pipeline script ?
@@ -108,7 +111,7 @@ A downstream project is a project that is triggered by the successful completion
     Credentials Management
 
 16) What is jenkins pipeline as code (Jenkinsfile)? How does it benefit the CI/CD process?
-    Jenkins Pipeline as Code, often represented by a file named Jenkinsfile, is a powerful feature that allows you to define and manage your Jenkins CI/CD (Continuous Integration/Continuous Delivery) processes as code. 
+    Jenkins Pipeline as Code, often represented by a file named Jenkinsfile, is a powerful feature that allows you to define and manage your Jenkins CI/CD processes as code. 
 
 17) Can you describe how to parallize builds in jenkins pipeline?
     pipeline {
@@ -169,4 +172,5 @@ A downstream project is a project that is triggered by the successful completion
 
 21) explain the concept of "quiet period" in jenkins and when it might be useful?
   the "quiet period" refers to a configurable delay or waiting period that occurs after a change is detected in the version control system (VCS) before a build is triggered. 
-  During this quiet period, Jenkins waits to see if there are any additional changes. If additional changes are detected within the specified quiet period, the build is triggered only once, incorporating all the changes that occurred during that time frame.
+  During this quiet period, Jenkins waits to see if there are any additional changes. If additional changes are detected within the specified quiet period, 
+  the build is triggered only once, incorporating all the changes that occurred during that time frame.
