@@ -1,0 +1,30 @@
+1) what is jekins and how does it contribute to ci cd process ?
+  Jenkins is an open-source automation server commonly used for building, testing, and deploying software. It provide CI/CD process by automating variuos stages of software development.
+  It is automation server, CI, CD, Extensibility through plugins, Monitoring and notifications
+
+2) Explain the difference between a freestyle project and a pipeline project in Jenkins ?
+  Freestyle project:
+    we will configure our build or deployment process using a point-and-click web interface.
+    Each project is a separate task. It is used for simple jobs, It is hard to easily share or reuse.
+    It is hard to see the big picture of your entire process.
+
+  Pipeline project:
+    we need to write build and deployment steps.
+    we can reuse the code for multiple projects.
+    we can have a clear picture of entire process because we will write entire process at a single place.
+    It is used for complex projects.
+    we can have the option like, the build will automatically runs when there a change in repo.
+
+3) How do you install jenkins? can you describe the initial setup steps?
+  install java jdk
+  install jenkins
+
+4) what are jenkins pulgins, and how do you use/install them ?
+  Jenkins plugins are extensions that add functionality to the Jenkins automation server. Jenkins plugins can provide features such as source code management, build tools integration, deployment support, notification services, and more.
+  Manage Jenkins > plugins > Available > Search > select >install with or without restart
+
+5) How do you create a new job in jenkins? Walk me through the basic steps ?
+
+
+6) Explain the purpose of Jenkinsfile. How is it used in Jenkins Pipeline ?
+  
