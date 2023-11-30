@@ -1,5 +1,6 @@
 1) what is jekins and how does it contribute to ci cd process ?
-  Jenkins is an open-source automation server commonly used for building, testing, and deploying software. It provide CI/CD process by automating variuos stages of software development.
+  Jenkins is an open-source automation server commonly used for building, testing, and deploying software. 
+  It provide CI/CD process by automating variuos stages of software development.
   It is automation server, CI, CD, Extensibility through plugins, Monitoring and notifications
 
 2) Explain the difference between a freestyle project and a pipeline project in Jenkins ?
@@ -28,7 +29,8 @@
 
 
 6) Explain the purpose of Jenkinsfile. How is it used in Jenkins Pipeline ?
-  A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline. The Jenkinsfile is written using the Groovy scripting language and can be stored along with the 
+  A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline. 
+  The Jenkinsfile is written using the Groovy scripting language and can be stored along with the 
   source code of your application in version control.
   
   It provides a clear and visual representation of your entire pipeline.
@@ -65,7 +67,8 @@
     Open the Jenkins web interface and navigate to the job you want to build.
     On the job's homepage, you will typically find a "Build Now" or "Build" button. Click on this button to trigger a manual build.
   Triggering a Build Automatically:
-    SCM Polling, Webhooks, Scheduled Builds, Git, GitHub, or GitLab, there are plugins available that can trigger builds automatically when changes are pushed to the repository.
+    SCM Polling, Webhooks, Scheduled Builds, Git, GitHub, or GitLab, 
+  there are plugins available that can trigger builds automatically when changes are pushed to the repository.
 
 9) what is jenkins node, and how does it contribute to the build process ?
     A Jenkins node, also known as an agent or slave, is a separate machine, either physical or virtual, that extends the capabilities of the Jenkins automation server. 
@@ -76,15 +79,18 @@
 
 10) describe the concept of downstream and upstream projects in jenkins ?
 Upstream Project:
-An upstream project is a project that triggers another project's build. When an upstream project is built, it may automatically trigger the build of its downstream projects.
+  An upstream project is a project that triggers another project's build. When an upstream project is built, 
+  it may automatically trigger the build of its downstream projects.
 
 Downstream Project:
-A downstream project is a project that is triggered by the successful completion of a build in an upstream project. The downstream project depends on the artifacts or results produced by the upstream project.
+  A downstream project is a project that is triggered by the successful completion of a build in an upstream project. 
+  The downstream project depends on the artifacts or results produced by the upstream project.
 
 
 
 11) How does jenkins integrate with version control systems like git?
-  Jenkins integrates with version control systems (VCS), such as Git, through plugins. These plugins allow Jenkins to interact with the VCS, retrieve source code, trigger builds based on code changes.
+  Jenkins integrates with version control systems (VCS), such as Git, through plugins. These plugins allow Jenkins to interact with the VCS, 
+  retrieve source code, trigger builds based on code changes.
 
 12) what is a jenkins webhook? How is it used in the context of version control integration?
   It is a mechanism that enables Jenkins to receive real-time notifications about events that occur in a version control system (VCS), such as Git.
@@ -99,7 +105,8 @@ A downstream project is a project that is triggered by the successful completion
       Dependency Management
 
 14) How can jenkins be used for deployment? What are some deployment strategies in Jenkins ?
-    Deployment in Jenkins refers to the automated and systematic process of releasing software applications or updates to different environments, such as development, testing, staging, and production.
+    Deployment in Jenkins refers to the automated and systematic process of releasing software applications or updates to different environments, 
+  such as development, testing, staging, and production.
 
     Use a Jenkins job to execute deployment scripts.
     Integrate Jenkins with deployment tools such as Ansible, Chef, or Puppet.
